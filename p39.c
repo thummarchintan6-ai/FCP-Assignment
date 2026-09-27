@@ -10,8 +10,9 @@ int main(){
         s*=i;
         
         d+=i/s;
+        
     }
-      printf("ans :%f",d);
+    printf("ans :%f",d);
 
 
     return 0;
