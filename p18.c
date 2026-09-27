@@ -7,12 +7,8 @@ int main()
     printf("Enter three numbers: ");
     scanf("%d %d %d", &a, &b, &c);
 
-    if (a >= b && a >= c)
-        max = a;
-    else if (b >= a && b >= c)
-        max = b;
-    else
-        max = c;
+    max = (a > b) ? a : b;
+    max = (max > c) ? max : c;
 
     printf("Maximum = %d", max);
 
